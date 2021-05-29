@@ -1,0 +1,75 @@
+const response = [
+    {   
+        id : "1", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie7.jpg", 
+        unit_price : 4,
+        quantités:["1","2","3","4","5","6","7","8","9"]
+    },
+    {   
+        id : "2", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie2.jpg", 
+        unit_price : 3,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "3", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie3.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    } ,
+    {   
+        id : "4", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie4.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "5", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie5.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "6", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie6.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "7", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie7.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "8", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie8.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    },
+    {   
+        id : "9", 
+        nom : "Smoothie", 
+        description : "smoothie aux fruits",
+        img_src : "images/smoothie9.jpg", 
+        unit_price : 2,
+        quantités:["1","2","3","4","5","6","7","8","9"],
+    }
+    ]
+
