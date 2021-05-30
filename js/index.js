@@ -31,7 +31,7 @@ function affichageProduits(response){
         NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
         produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
         NombreProduitDansLePanier.innerText = ''
-        if (produitEnlocalStorage != []){
+        if ((produitEnlocalStorage != []) || (produitEnlocalStorage != null)) {
             NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
         }
         
