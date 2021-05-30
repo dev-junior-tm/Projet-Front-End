@@ -38,8 +38,6 @@ function affichageProduits(response){
     }     
 }
 
-        // La fonction est applée puis la page est chargé
-
     //    Ajout du produit au panier
 function ajout_au_panier(indice_produit){
     var somme ;
