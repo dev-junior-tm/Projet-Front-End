@@ -8,7 +8,7 @@ function affichageProduits(response){
     // mettre les données dans les variables
     for (let i=0; i < response.length; i++){
         structureProduits = structureProduits +  `
-        <a href="">
+        <a>
             <div class="mise-en-page-produits>
                 <div class="image-smoothie">
                     <img src="${(response[i].img_src)}">
@@ -26,6 +26,13 @@ function affichageProduits(response){
         </a>`;
         // Ajout de l'HTML
         element1.innerHTML = structureProduits;
+        // afficher le nombre produit a coté du lien panier
+        NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
+        produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
+        NombreProduitDansLePanier.innerText = ''
+        if (produitEnlocalStorage != []){
+            NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
+        }
     }     
 }
 
