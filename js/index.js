@@ -29,21 +29,20 @@ function affichageProduits(response){
     }     
 }
 
-        // La fonction est applée puis la page est chargé
-
-// window.onload = () => {
-//     affichageProduits(response);
-//  };
     //    Ajout du produit au panier
 function ajout_au_panier(indice_produit){
+    var somme ;
     var produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
+    NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
     if (produitEnlocalStorage == null) {
         produitEnlocalStorage = [response[indice_produit]];
         localStorage.setItem("somme", JSON.stringify(response[indice_produit].unit_price));
+        NombreProduitDansLePanier.innerText = 1
     }else {
         produitEnlocalStorage.push(response[indice_produit]);
-        var somme = parseInt(localStorage.getItem("somme"), 10);
+        somme = parseInt(localStorage.getItem("somme"), 10);
         localStorage.setItem("somme", somme + response[indice_produit].unit_price);
+        NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
     }
     localStorage.setItem("produit", JSON.stringify(produitEnlocalStorage));
 }
