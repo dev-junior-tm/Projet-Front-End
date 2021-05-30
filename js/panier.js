@@ -10,13 +10,12 @@ const elemnt2 = document.querySelector("#container-produits-panier");
 console.log(elemnt2);
 
 // si le panier est vide : afficher le panier est vide
-if (ProduitPresentDansLeLocalStorage === null || ProduitPresentDansLeLocalStorage == 0){
-const paniervide = `
-    <div class="container-panier-vide">
-        <div> Le panier est vide </div>
-    </div>
-`;
-    elemnt2.innerHTML = paniervide;
+if (ProduitPresentDansLeLocalStorage == null){
+        elemnt2.innerHTML = `
+        <div class="container-panier-vide">
+            <div> Le panier est vide </div>
+        </div>
+    `;
 } else {
     // si le panier est pas vide
     let structureProduitPanier = [];
@@ -29,8 +28,7 @@ const paniervide = `
             <div>Prix: ${ProduitPresentDansLeLocalStorage[k].unit_price} 
             <button id="${k}"class="btn-supprimer" onclick="SuprimmerProduit(this.id)" >Supprimer l'article</div>
         </div>`};
-    
-        if (k == ProduitPresentDansLeLocalStorage.length){
+        if ((ProduitPresentDansLeLocalStorage != null) && (k == ProduitPresentDansLeLocalStorage.length)){
             elemnt2.innerHTML = structureProduitPanier; 
         }    
 }

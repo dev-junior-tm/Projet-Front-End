@@ -26,6 +26,7 @@ function affichageProduits(response){
         </a>`;
         // Ajout de l'HTML
         element1.innerHTML = structureProduits;
+
         // afficher le nombre produit a coté du lien panier
         NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
         produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
@@ -33,8 +34,11 @@ function affichageProduits(response){
         if (produitEnlocalStorage != []){
             NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
         }
+        
     }     
 }
+
+        // La fonction est applée puis la page est chargé
 
     //    Ajout du produit au panier
 function ajout_au_panier(indice_produit){

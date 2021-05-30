@@ -15,23 +15,24 @@
 	<!-- Spécifique -->
 	<link rel="stylesheet" href="CSS/index.css">
 	<!-- JS global -->
+	
 	<script type="text/javascript" src="js/data.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
-	
 </head>
 <body>
 
 	<header>
 		<!-- Navbar -->
 		<nav>
-			
-			
 			<h1><a href="index.html">Smoothie.</a></h1>
+
+
 			<!-- menu burger -->
 			<img src="images/menu.png" alt="menu">
+		
 
 			<!-- Liste liens -->
-			<ul>
+			<ul >
 				<li><a href="index.html" class="active">Accueil</a></li>
 				<li><a href="autre.html">Nos produits</a></li>
 				<li><a href="contact.html">A propos</a></li>
@@ -50,11 +51,10 @@
 
 	<!-- Main -->
 	<div class="produits" id="main"></div>
-	
-	
-	<script type="text/javascript" src="js/nav_barre.js"></script>
 </body>
+	<script type="text/javascript" src="js/nav_barre.js"></script>
 	<script>
+		
 		affichageProduits(response);
 	</script>
 
@@ -73,8 +73,8 @@
 				<label >Votre prénom:</label>
 				<input name="prenom">
 				<br>
-				<label for="e-mail">Votre adresse:</label>
-				<input name="e-mail" >
+				<label for="age">Votre adresse: <e-mail></e-mail></label>
+				<input type="number" name="age" id="age" required min="10" max="100">
 				<br>
 				<button type="submit">Je m'inscris</button>
 			</form>
