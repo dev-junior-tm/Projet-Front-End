@@ -25,17 +25,15 @@ function affichageProduits(response){
             </div>
         </a>`;
         // Ajout de l'HTML
-        element1.innerHTML = structureProduits;
-
-        // afficher le nombre produit a coté du lien panier
-        NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
-        produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
-        NombreProduitDansLePanier.innerText = ''
-        if ((produitEnlocalStorage != []) || (produitEnlocalStorage != null)) {
-            NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
-        }
-        
-    }     
+        element1.innerHTML = structureProduits;        
+    }  
+   // afficher le nombre produit a coté du lien panier
+  NombreProduitDansLePanier = document.getElementById('NombreProduitDansLePanier')
+  produitEnlocalStorage = JSON.parse(localStorage.getItem("produit"));
+  NombreProduitDansLePanier.innerText = ''
+  if ((produitEnlocalStorage != []) || (produitEnlocalStorage != null)) {
+      NombreProduitDansLePanier.innerText = produitEnlocalStorage.length
+  }
 }
 
     //    Ajout du produit au panier
